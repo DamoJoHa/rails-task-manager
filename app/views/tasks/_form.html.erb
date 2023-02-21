@@ -1,0 +1,11 @@
+<%= form_with model: @task do |f| %>
+  <%= f.label :title, "Task:" %>
+  <%= f.text_field :title %>
+  <%= f.label :details, "Description:" %>
+  <%= f.text_field :details %>
+  <div>
+    <%= f.label :completed, "Completed:" %>
+    <%= f.check_box :completed %>
+  </div>
+  <%= f.submit %>
+<% end %>
